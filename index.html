@@ -1,0 +1,956 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>CareBridge 360 | Kalsnet Consulting</title>
+
+<style>
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #0f2027, #203a43, #2c5364);
+    color: white;
+    line-height: 1.7;
+}
+
+/* HEADER */
+
+header {
+    text-align: center;
+    padding: 45px 20px;
+    background: rgba(0,0,0,0.25);
+    border-bottom: 3px solid #00e6ff;
+}
+
+header h1 {
+    font-size: 42px;
+    color: #00e6ff;
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 18px;
+    color: #cceeff;
+}
+
+.brand {
+    color: #00ffff;
+    font-size: 16px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 12px;
+}
+
+.tagline {
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: bold;
+    letter-spacing: 1px;
+    margin-top: 15px;
+}
+
+/* MAIN CONTAINER */
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 30px 22px;
+}
+
+/* INTRODUCTION */
+
+.intro {
+    background: rgba(0,230,255,0.08);
+    border: 1px solid rgba(0,230,255,0.4);
+    border-radius: 14px;
+    padding: 25px;
+    margin-bottom: 25px;
+    text-align: center;
+}
+
+.intro h2 {
+    color: #00e6ff;
+    margin-top: 0;
+}
+
+/* INDIVIDUAL EXPLANATION SECTIONS */
+
+.section {
+    width: 100%;
+    display: block;
+    background: rgba(255,255,255,0.08);
+    border-radius: 14px;
+    border: 1px solid rgba(0,230,255,0.25);
+    padding: 25px;
+    margin-bottom: 25px;
+    box-shadow: 0 4px 22px rgba(0,0,0,0.35);
+    transition: 0.3s ease;
+}
+
+.section:hover {
+    transform: translateY(-3px);
+    background: rgba(0,230,255,0.11);
+    border-color: #00e6ff;
+}
+
+.section h2 {
+    color: #00e6ff;
+    font-size: 23px;
+    margin-top: 0;
+    margin-bottom: 18px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid rgba(0,230,255,0.4);
+}
+
+.section h3 {
+    color: #00ffff;
+    font-size: 17px;
+    margin-top: 20px;
+    margin-bottom: 8px;
+}
+
+.section p {
+    color: #d9faff;
+    font-size: 15px;
+    margin-bottom: 14px;
+}
+
+.section ul {
+    padding-left: 25px;
+    color: #d9faff;
+}
+
+.section li {
+    margin-bottom: 10px;
+}
+
+strong {
+    color: #66eaff;
+}
+
+/* MODULE CARDS */
+
+.module-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 18px;
+    margin-top: 20px;
+}
+
+.module-card {
+    background: rgba(0,230,255,0.08);
+    border-left: 4px solid #00e6ff;
+    border-radius: 9px;
+    padding: 17px;
+}
+
+.module-card h3 {
+    color: #00ffff;
+    margin: 0 0 8px;
+}
+
+.module-card p {
+    font-size: 14px;
+    margin: 0;
+}
+
+/* LAUNCH APPLICATION */
+
+.launch-area {
+    text-align: center;
+    padding: 40px 20px;
+    margin: 35px 0;
+    background: linear-gradient(135deg, #0b3156, #075078);
+    border: 2px solid #00e6ff;
+    border-radius: 16px;
+}
+
+.launch-area h2 {
+    color: #00e6ff;
+    font-size: 27px;
+}
+
+.launch-area p {
+    color: #d9faff;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 18px;
+    padding: 14px 38px;
+    background: #00e6ff;
+    color: #061a2d;
+    border-radius: 30px;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 16px;
+    transition: 0.3s;
+    box-shadow: 0 4px 18px rgba(0,230,255,0.3);
+}
+
+.btn:hover {
+    background: white;
+    transform: scale(1.05);
+}
+
+/* FOOTER */
+
+footer {
+    text-align: center;
+    padding: 25px 15px;
+    background: rgba(0,0,0,0.4);
+    border-top: 2px solid #00e6ff;
+    color: #aaa;
+    font-size: 14px;
+}
+
+footer strong {
+    color: #00e6ff;
+}
+
+/* MOBILE */
+
+@media(max-width:768px) {
+    header h1 {
+        font-size: 30px;
+    }
+
+    .subtitle {
+        font-size: 15px;
+    }
+
+    .container {
+        padding: 18px 12px;
+    }
+
+    .section {
+        padding: 19px;
+    }
+
+    .section h2 {
+        font-size: 20px;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<!-- MAIN HEADER -->
+
+<header>
+
+    <div class="brand">
+        KALSNET (KNet) CONSULTING SERVICES
+    </div>
+
+    <h1>CAREBRIDGE 360</h1>
+
+    <p class="subtitle">
+        Closing the Gaps in Modern Healthcare
+    </p>
+
+    <p class="subtitle">
+        AI • Healthcare Analytics • Intelligent Automation • Emerging Technologies
+    </p>
+
+    <div class="tagline">
+        ADVANCED AI-DRIVEN HEALTHCARE SOLUTIONS
+    </div>
+
+</header>
+
+<div class="container">
+
+<!-- APPLICATION OVERVIEW -->
+
+<div class="intro">
+
+    <h2>APPLICATION OVERVIEW</h2>
+ 
+    <p>
+        <strong>CareBridge 360</strong>, 
+         developed by Randy Singh of Kalsnet(KNet) Consulting Group, 
+         is an integrated healthcare technology platform demonstrating how
+        Artificial Intelligence, automated analytics, predictive
+        monitoring, and intelligent decision-support technologies
+        can address critical gaps in modern healthcare.
+    </p>
+
+    <p>
+        The platform brings together five specialized healthcare
+        modules designed to improve clinical documentation,
+        remote patient monitoring, telehealth accessibility,
+        mental health screening, and healthcare data coordination.
+    </p>
+
+</div>
+
+<!-- SECTION 1 -->
+
+<div class="section">
+
+    <h2>1. WHAT THE APPLICATION IS ABOUT</h2>
+
+    <p>
+        CareBridge 360, "Closing the Gaps in Modern Healthcare,"
+        is designed to demonstrate how emerging technologies
+        can address major operational and service-delivery
+        challenges in today's healthcare environment.
+    </p>
+
+    <p>
+        The application integrates five practical tools into
+        one web-based platform. Each tool addresses a different
+        healthcare challenge, from clinician administrative
+        workloads to fragmented patient records and limited
+        access to specialized care.
+    </p>
+
+    <p>
+        The overall objective is to demonstrate how AI-driven
+        automation, predictive analytics, intelligent screening,
+        and data integration can improve operational efficiency
+        and support better-informed healthcare processes.
+    </p>
+
+    <p>
+        The platform is intended for educational and technology
+        demonstration purposes. It is not a certified medical
+        device and is not intended for actual clinical
+        decision-making.
+    </p>
+
+</div>
+
+<!-- SECTION 2 -->
+
+<div class="section">
+
+    <h2>2. FIVE INTEGRATED HEALTHCARE MODULES</h2>
+
+    <p>
+        CareBridge 360 consists of five interconnected
+        application modules, each targeting a specific
+        healthcare mission gap.
+    </p>
+
+    <div class="module-grid">
+
+        <div class="module-card">
+            <h3>01. Clinical Documentation</h3>
+            <p>
+                Automates SOAP medical notes, extracts
+                clinical information, and assists with
+                insurance prior-authorization letters.
+            </p>
+        </div>
+
+        <div class="module-card">
+            <h3>02. Remote Patient Monitoring</h3>
+            <p>
+                Analyzes patient readings, identifies
+                abnormal trends, and calculates risk
+                scores for prioritizing follow-up.
+            </p>
+        </div>
+
+        <div class="module-card">
+            <h3>03. Telehealth & Triage</h3>
+            <p>
+                Evaluates symptoms, identifies emergency
+                warning signs, and supports virtual
+                healthcare appointment matching.
+            </p>
+        </div>
+
+        <div class="module-card">
+            <h3>04. Mental Health Screening</h3>
+            <p>
+                Evaluates PHQ-9 and GAD-7 questionnaires,
+                identifies severity levels, and supports
+                stepped-care recommendations.
+            </p>
+        </div>
+
+        <div class="module-card">
+            <h3>05. Healthcare Data Coordination</h3>
+            <p>
+                Integrates fragmented patient records
+                and identifies potential medication,
+                dosage, and laboratory inconsistencies.
+            </p>
+        </div>
+
+    </div>
+
+</div>
+
+<!-- SECTION 3 -->
+
+<div class="section">
+
+    <h2>3. HOW THE APPLICATION WORKS</h2>
+
+    <p>
+        Every module provides three primary interactive
+        tabs that guide users through learning, executing,
+        and exporting the application results.
+    </p>
+
+    <h3>LEARN</h3>
+
+    <p>
+        Explains the underlying technology and operational
+        concepts using understandable descriptions,
+        technical glossaries, conceptual diagrams,
+        and mathematical formulas.
+    </p>
+
+    <h3>TRY IT</h3>
+
+    <p>
+        Allows users to execute the application using
+        built-in synthetic demonstration datasets or
+        upload their own supported files for processing
+        and analysis.
+    </p>
+
+    <h3>DOWNLOAD</h3>
+
+    <p>
+        Provides downloadable analytical results and
+        reports in PDF, editable Microsoft Word,
+        plain text, and CSV formats.
+    </p>
+
+</div>
+
+<!-- SECTION 4 -->
+
+<div class="section">
+
+    <h2>4. CLINICAL DOCUMENTATION AUTOMATION</h2>
+
+    <p>
+        The documentation module processes medical
+        visit transcripts and separates the information
+        into the four standard SOAP documentation
+        categories: Subjective, Objective, Assessment,
+        and Plan.
+    </p>
+
+    <p>
+        It analyzes sentences using keyword matching,
+        extracts available vital signs and medication
+        information, and identifies suggested diagnosis
+        codes.
+    </p>
+
+    <p>
+        The module also evaluates the completeness
+        of prior-authorization requests and assists
+        with generating supporting insurance letters.
+    </p>
+
+    <p>
+        Optional Claude AI integration can generate
+        more natural-language SOAP documentation
+        when an API key is configured.
+    </p>
+
+</div>
+
+<!-- SECTION 5 -->
+
+<div class="section">
+
+    <h2>5. REMOTE PATIENT MONITORING & PREDICTIVE ANALYTICS</h2>
+
+    <p>
+        This module evaluates daily patient readings
+        to identify potential warning conditions
+        and prioritize individuals requiring
+        additional attention.
+    </p>
+
+    <p>
+        It applies three analytical techniques:
+    </p>
+
+    <ul>
+        <li>
+            <strong>Threshold Analysis:</strong>
+            Compares readings against predefined
+            safety limits.
+        </li>
+
+        <li>
+            <strong>Trend Analysis:</strong>
+            Identifies potentially concerning changes
+            over time, such as rapid weight gain.
+        </li>
+
+        <li>
+            <strong>Statistical Analysis:</strong>
+            Uses Z-score calculations to compare
+            readings against individual patient
+            baselines.
+        </li>
+    </ul>
+
+    <p>
+        These indicators are combined into a
+        risk score that helps demonstrate how
+        healthcare teams can prioritize
+        patient follow-up.
+    </p>
+
+</div>
+
+<!-- SECTION 6 -->
+
+<div class="section">
+
+    <h2>6. TELEHEALTH & INTELLIGENT PATIENT TRIAGE</h2>
+
+    <p>
+        The telehealth module evaluates patient
+        symptoms and identifies emergency warning
+        signs before calculating a triage score.
+    </p>
+
+    <p>
+        The scoring process considers symptoms,
+        severity, patient age, chronic conditions,
+        and symptom duration.
+    </p>
+
+    <p>
+        Based on the resulting score, the application
+        assigns one of four care categories:
+        <strong>Urgent, Soon, Routine, or Self-Care.</strong>
+    </p>
+
+    <p>
+        It also demonstrates specialty matching
+        and simulated video appointment scheduling
+        to improve access to virtual healthcare.
+    </p>
+
+</div>
+
+<!-- SECTION 7 -->
+
+<div class="section">
+
+    <h2>7. MENTAL HEALTH SCREENING & ASSESSMENT</h2>
+
+    <p>
+        This module demonstrates automated analysis
+        of two standardized screening questionnaires:
+        <strong>PHQ-9 for depression</strong> and
+        <strong>GAD-7 for anxiety.</strong>
+    </p>
+
+    <p>
+        The application calculates questionnaire
+        scores, assigns severity categories,
+        and identifies responses requiring
+        additional human attention.
+    </p>
+
+    <p>
+        Potential self-harm responses are flagged
+        for same-day follow-up in the demonstration
+        workflow.
+    </p>
+
+    <p>
+        The module also presents stepped-care
+        pathways ranging from monitoring and
+        supportive interventions to specialist
+        psychiatric referral.
+    </p>
+
+</div>
+
+<!-- SECTION 8 -->
+
+<div class="section">
+
+    <h2>8. HEALTHCARE DATA COORDINATION & INTEGRATION</h2>
+
+    <p>
+        Healthcare information is frequently
+        distributed across hospitals, clinics,
+        pharmacies, and other independent
+        information systems.
+    </p>
+
+    <p>
+        This module demonstrates how information
+        from multiple sources can be matched
+        and consolidated into a coordinated
+        patient record.
+    </p>
+
+    <p>
+        It identifies potential medication
+        conflicts, inconsistent dosages,
+        duplicate laboratory tests, and
+        other data inconsistencies.
+    </p>
+
+    <p>
+        The consolidated information can
+        be exported using the
+        <strong>FHIR healthcare data-exchange
+        standard</strong>, supporting
+        interoperability concepts.
+    </p>
+
+</div>
+
+<!-- SECTION 9 -->
+
+<div class="section">
+
+    <h2>9. DATASETS & DEMONSTRATION ENVIRONMENT</h2>
+
+    <p>
+        All built-in application datasets are
+        synthetic, meaning they are realistic
+        demonstration records but do not
+        represent actual patients.
+    </p>
+
+    <p>
+        The demonstration environment includes:
+    </p>
+
+    <ul>
+        <li>
+            Sample doctor-patient medical visit transcripts.
+        </li>
+
+        <li>
+            Thirty days of simulated home readings
+            for eight fictional patients.
+        </li>
+
+        <li>
+            Fifteen fictional telehealth intake
+            forms and simulated appointment slots.
+        </li>
+
+        <li>
+            Repeated mental health screening
+            records for six fictional individuals.
+        </li>
+
+        <li>
+            Simulated patient medication, laboratory,
+            and allergy records distributed across
+            three separate systems.
+        </li>
+    </ul>
+
+    <p>
+        Users can upload supported TXT, Word,
+        and CSV files. Each module provides
+        templates identifying the required
+        input columns.
+    </p>
+
+    <p>
+        Uploaded files are processed during
+        the application session and are not
+        stored by the application. Real patient
+        information should only be used in
+        an appropriately authorized and
+        compliant environment.
+    </p>
+
+</div>
+
+<!-- SECTION 10 -->
+
+<div class="section">
+
+    <h2>10. TECHNOLOGIES, TOOLS & FRAMEWORKS</h2>
+
+    <p>
+        CareBridge 360 combines Python-based
+        application development, data science,
+        statistical analysis, visualization,
+        document generation, and optional
+        Generative AI integration.
+    </p>
+
+    <h3>Python & Streamlit</h3>
+    <p>
+        Core application programming and
+        interactive web application development.
+    </p>
+
+    <h3>Pandas & NumPy</h3>
+    <p>
+        Data processing, statistical computations,
+        numerical analysis, and dataset management.
+    </p>
+
+    <h3>Plotly</h3>
+    <p>
+        Interactive charts, patient monitoring
+        trends, and analytical visualizations.
+    </p>
+
+    <h3>Graphviz</h3>
+    <p>
+        Conceptual diagrams, application
+        workflows, and process visualization.
+    </p>
+
+    <h3>python-docx & ReportLab</h3>
+    <p>
+        Automated generation of editable
+        Microsoft Word and PDF reports.
+    </p>
+
+    <h3>Claude AI Integration</h3>
+    <p>
+        Optional Anthropic Claude API integration
+        for enhanced natural-language SOAP note
+        generation when configured.
+    </p>
+
+    <h3>Healthcare Standards & Frameworks</h3>
+    <p>
+        SOAP documentation, ICD-10, CPT,
+        PHQ-9, GAD-7, and FHIR healthcare
+        interoperability standards.
+    </p>
+
+    <h3>LaTeX</h3>
+    <p>
+        Mathematical formulas and analytical
+        expressions displayed within the
+        educational sections.
+    </p>
+
+</div>
+
+<!-- SECTION 11 -->
+
+<div class="section">
+
+    <h2>11. REAL-WORLD BENEFITS & OPERATIONAL VALUE</h2>
+
+    <p>
+        CareBridge 360 demonstrates how
+        intelligent automation and data analytics
+        can reduce repetitive administrative
+        activities, identify potential risks,
+        and improve healthcare coordination.
+    </p>
+
+    <h3>Reduced Administrative Workload</h3>
+
+    <p>
+        Automating medical documentation and
+        insurance authorization preparation
+        can reduce repetitive paperwork and
+        allow clinicians to dedicate more
+        time to patient care.
+    </p>
+
+    <h3>Earlier Identification of Potential Risks</h3>
+
+    <p>
+        Remote monitoring and trend analysis
+        help demonstrate how potential warning
+        conditions can be identified for
+        timely human review.
+    </p>
+
+    <h3>Improved Healthcare Accessibility</h3>
+
+    <p>
+        Telehealth triage and virtual appointment
+        capabilities demonstrate opportunities
+        to improve healthcare access for rural
+        and underserved populations.
+    </p>
+
+    <h3>Improved Mental Health Support</h3>
+
+    <p>
+        Automated screening and severity
+        categorization help demonstrate how
+        limited specialist resources can be
+        prioritized for individuals requiring
+        additional attention.
+    </p>
+
+    <h3>Better Patient Data Coordination</h3>
+
+    <p>
+        Consolidating fragmented records and
+        identifying potential medication
+        inconsistencies can help reduce
+        information gaps and improve
+        coordination among providers.
+    </p>
+
+</div>
+
+<!-- SECTION 12 -->
+
+<div class="section">
+
+    <h2>12. FINANCIAL IMPACT & COST-BENEFIT ESTIMATION</h2>
+
+    <p>
+        The application includes an impact
+        estimator that allows organizations
+        to enter their own operational and
+        financial assumptions.
+    </p>
+
+    <p>
+        It estimates potential annual value
+        from reduced documentation time,
+        hospital admissions avoided, and
+        duplicate laboratory tests prevented.
+    </p>
+
+    <p>
+        These calculations help demonstrate
+        how organizations can evaluate
+        potential financial benefits and
+        develop a business case for investing
+        in healthcare technology solutions.
+    </p>
+
+</div>
+
+<!-- SECTION 13 -->
+
+<div class="section">
+
+    <h2>13. HUMAN OVERSIGHT & RESPONSIBLE AI</h2>
+
+    <p>
+        CareBridge 360 is designed as an
+        educational and technology
+        demonstration platform.
+    </p>
+
+    <p>
+        Its analytical outputs demonstrate
+        automated processing and decision-support
+        concepts. They are not substitutes
+        for professional medical judgment.
+    </p>
+
+    <p>
+        Diagnosis, treatment, emergency
+        response, and patient-care decisions
+        must remain under the supervision
+        of appropriately qualified healthcare
+        professionals.
+    </p>
+
+</div>
+
+<!-- SECTION 14 -->
+
+<div class="section">
+
+    <h2>14. OVERALL APPLICATION VALUE</h2>
+
+    <p>
+        CareBridge 360 demonstrates the
+        practical integration of
+        <strong>Artificial Intelligence,
+        Statistical Analytics, Predictive
+        Monitoring, Intelligent Automation,
+        and Healthcare Data Interoperability</strong>
+        within one unified technology platform.
+    </p>
+
+    <p>
+        By bringing together five specialized
+        healthcare modules, the application
+        illustrates how emerging technologies
+        can address administrative inefficiencies,
+        improve access to information,
+        support earlier risk identification,
+        and strengthen healthcare coordination.
+    </p>
+
+    <p>
+        Its interactive demonstrations,
+        downloadable reports, synthetic
+        datasets, and financial impact
+        estimator make it useful for
+        technology education, organizational
+        demonstrations, and preliminary
+        business-case development.
+    </p>
+
+</div>
+
+<!-- LAUNCH APPLICATION AT THE END -->
+
+<div class="launch-area">
+
+    <h2>EXPLORE CAREBRIDGE 360</h2>
+
+    <p>
+        Experience the integrated healthcare
+        technology platform and explore its
+        five intelligent application modules,
+        interactive demonstrations,
+        analytical capabilities, and
+        reporting features.
+    </p>
+
+    <a
+        href="https://mqrf7v7ojuapkdkxymg3dk.streamlit.app/"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="btn">
+        LAUNCH APPLICATION
+    </a>
+
+</div>
+
+</div>
+
+<!-- FOOTER -->
+
+<footer>
+
+    <strong>KALSNET (KNet) CONSULTING GROUP</strong>
+
+    <p>
+        Securing the Future Through AI and Cyber Resilience
+    </p>
+
+    © 2026 Kalsnet (KNet) Consulting Group |
+    AI • Healthcare Analytics • Emerging Technologies
+
+</footer>
+
+</body>
+</html>
